@@ -1,20 +1,20 @@
 class Crab < Formula
   desc "CLI binary for SmartCrab workflow orchestration engine"
   homepage "https://github.com/smartcrabai/smartcrab"
-  version "0.1.3"
+  version "0.1.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/smartcrab/releases/download/v0.1.3/smartcrab-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "788969d63f61db0e9b133847f017d2b706435db04f61728cae8a6b30f417f363"
+      url "https://github.com/smartcrabai/smartcrab/releases/download/v0.1.4/smartcrab-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "f8143b8ba8a5e53993dd1149f6046b171570b3c53cbd57441252056fc3cce1fc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/smartcrab/releases/download/v0.1.3/smartcrab-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "ac7eda09936377dbbd7b8858b8b0276e8daed607986171f3baf2b3dcc7ed0a19"
+      url "https://github.com/smartcrabai/smartcrab/releases/download/v0.1.4/smartcrab-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "f917eaea3c51106a3c8b1cbc37aaed212795ec0b77d15d6f3c15e9ee12a00e19"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/smartcrab/releases/download/v0.1.3/smartcrab-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "42f6f7e28a2459d7dfbca12ab698cfe24e55e3ab1e9dda5e977e6c328cb9c6ff"
+      url "https://github.com/smartcrabai/smartcrab/releases/download/v0.1.4/smartcrab-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b4460284eaa259bba790fd2e9f02737ea6219447f8c56dfd75aa06f6dd6b2eb8"
   end
   license "Apache-2.0"
 

@@ -1,25 +1,25 @@
 class Seher < Formula
   desc "CLI tool to monitor Claude API rate limits and execute code after reset"
   homepage "https://github.com/smartcrabai/seher"
-  version "0.0.13"
+  version "0.0.14"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/seher/releases/download/v0.0.13/sehercode-aarch64-apple-darwin.tar.xz"
-      sha256 "0c493f4859fca31d69f0e100f15b67b9ba8f484d6b42494cfcc30f05a92e96b5"
+      url "https://github.com/smartcrabai/seher/releases/download/v0.0.14/sehercode-aarch64-apple-darwin.tar.xz"
+      sha256 "6c7aefbb34365ec56c4c13eb17918eaa4418b9da26aa7bd1d4b581f285462614"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/seher/releases/download/v0.0.13/sehercode-x86_64-apple-darwin.tar.xz"
-      sha256 "48b01277f73494d26b3780b8755e12ef40a559c2ef8bd0cdbe3a474c514412e2"
+      url "https://github.com/smartcrabai/seher/releases/download/v0.0.14/sehercode-x86_64-apple-darwin.tar.xz"
+      sha256 "c16480d4c47df0ff2e3bbb42d17d0cd91a443f81d10228d683f6a40dd04e7d66"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/seher/releases/download/v0.0.13/sehercode-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7524fe209eda8b62b66b9b3352676f6cd68fc46cea1f52c163baca470aa486f8"
+      url "https://github.com/smartcrabai/seher/releases/download/v0.0.14/sehercode-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9a49e97321f6d632d8701c781194b59ec7a9a583b0a50a0b1c0c04a8f3196c29"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/seher/releases/download/v0.0.13/sehercode-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e2d9d5de2b7c3fcdb0cbafb3def9d062a55fcb0d32df92ce39991318c0fc0845"
+      url "https://github.com/smartcrabai/seher/releases/download/v0.0.14/sehercode-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "aed83a15d9d79d57d3525d630bec479fc1231c04f4264eef8007c7c086556aca"
     end
   end
   license "Apache-2.0"

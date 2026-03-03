@@ -1,24 +1,24 @@
 class Zz < Formula
   desc "A CLI timer tool that waits until a specified time with a progress bar"
-  homepage "https://github.com/takumi3488/zz"
+  homepage "https://github.com/smartcrabai/zz"
   version "0.0.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/takumi3488/zz/releases/download/v0.0.7/zzsleep-aarch64-apple-darwin.tar.xz"
+      url "https://github.com/smartcrabai/zz/releases/download/v0.0.7/zzsleep-aarch64-apple-darwin.tar.xz"
       sha256 "7b40d4806a2add8dc1361f1051ac7b763f56046964db86cb174d20d071a2d0ce"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/takumi3488/zz/releases/download/v0.0.7/zzsleep-x86_64-apple-darwin.tar.xz"
+      url "https://github.com/smartcrabai/zz/releases/download/v0.0.7/zzsleep-x86_64-apple-darwin.tar.xz"
       sha256 "e178a8a04cec11716a5c6ead237d44f9270207f47f67741c97f79d3139a32b49"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/takumi3488/zz/releases/download/v0.0.7/zzsleep-aarch64-unknown-linux-gnu.tar.xz"
+      url "https://github.com/smartcrabai/zz/releases/download/v0.0.7/zzsleep-aarch64-unknown-linux-gnu.tar.xz"
       sha256 "185ff0ac8ad2729e8761c58e7defe8ee19fb1e7fa6f87c8f25d8e90819a098fb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/takumi3488/zz/releases/download/v0.0.7/zzsleep-x86_64-unknown-linux-gnu.tar.xz"
+      url "https://github.com/smartcrabai/zz/releases/download/v0.0.7/zzsleep-x86_64-unknown-linux-gnu.tar.xz"
       sha256 "c1fdacbb5474732d02be748613fe02a9394619f2f7d8408b148cd66adb8daca0"
     end
   end

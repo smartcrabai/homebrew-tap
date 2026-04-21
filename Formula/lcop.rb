@@ -5,20 +5,20 @@
 class Lcop < Formula
   desc "CLI tool that drives GitHub Copilot CLI through a structured implementation workflow"
   homepage "https://github.com/smartcrabai/longcop"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/longcop/releases/download/v0.1.2/longcop_darwin_amd64.tar.gz"
-      sha256 "258687b52d4115e12adf06b08f7150151b77a68a4ce9bdc3043f20913d5b26c3"
+      url "https://github.com/smartcrabai/longcop/releases/download/v0.1.3/longcop_darwin_amd64.tar.gz"
+      sha256 "7fe9e841646cb20314a461fce390599f8f85cfbb3e8725f3a8d0928d5228ccab"
 
       define_method(:install) do
         bin.install "lcop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/longcop/releases/download/v0.1.2/longcop_darwin_arm64.tar.gz"
-      sha256 "ff68234910bf7cf4b7ddeafe7630097e32433f2921a225104da11c33ca567206"
+      url "https://github.com/smartcrabai/longcop/releases/download/v0.1.3/longcop_darwin_arm64.tar.gz"
+      sha256 "7a722c6ed80e5748c283c7af20082a2fbe879fc0437b2a554995788d89e03118"
 
       define_method(:install) do
         bin.install "lcop"
@@ -28,15 +28,15 @@ class Lcop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/smartcrabai/longcop/releases/download/v0.1.2/longcop_linux_amd64.tar.gz"
-      sha256 "01c58ee2bde8400e1dbec427fe9891835470143033391511dc706932421c5ac8"
+      url "https://github.com/smartcrabai/longcop/releases/download/v0.1.3/longcop_linux_amd64.tar.gz"
+      sha256 "c3bf8103b64dd95b5e801c8532162f0c0bc2ed5d34c327c6e600fc330df28c3a"
       define_method(:install) do
         bin.install "lcop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/smartcrabai/longcop/releases/download/v0.1.2/longcop_linux_arm64.tar.gz"
-      sha256 "7d5e3d12aa0d7048ebca20fd9414a701a9b9d37797603cc063440e40a1bbe3d7"
+      url "https://github.com/smartcrabai/longcop/releases/download/v0.1.3/longcop_linux_arm64.tar.gz"
+      sha256 "01a3a08584a9b1d31f716366dd5948632c423aaebe84af363a66a399c2f4284c"
       define_method(:install) do
         bin.install "lcop"
       end

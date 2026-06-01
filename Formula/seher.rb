@@ -1,25 +1,25 @@
 class Seher < Formula
-  desc "CLI tool to monitor Claude API rate limits and execute code after reset"
+  desc "Seher CLI: pick the highest-priority coding agent and run a plan/build prompt"
   homepage "https://github.com/smartcrabai/seher"
-  version "0.0.31"
+  version "0.0.35"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/seher/releases/download/v0.0.31/sehercode-aarch64-apple-darwin.tar.xz"
-      sha256 "c21e5b4508d0caf56f5e6f713f3016264f016c4d5ffd6fa4290fc446563a765d"
+      url "https://github.com/smartcrabai/seher/releases/download/v0.0.35/seher-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "d392fc2418de6b29c0ee9d42546a9a07b29e34e772229b12f540b4c97f1fff83"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/seher/releases/download/v0.0.31/sehercode-x86_64-apple-darwin.tar.xz"
-      sha256 "4519afa72108f03619e9171a4ad82243d670a7d3f35b48341b2b9c9522f8c408"
+      url "https://github.com/smartcrabai/seher/releases/download/v0.0.35/seher-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "0e059a992a7b0379c1ec1ffec82e15987e6d2aef306cd1feee035ee7298f475c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/seher/releases/download/v0.0.31/sehercode-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f70046b40185e820950aec3a2bcdbd6b55f35a5d7d1d9404eb198bd039e45f8e"
+      url "https://github.com/smartcrabai/seher/releases/download/v0.0.35/seher-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "409db1503eefeca497f7d0592ea4f7d2cc6a353c2b14d6849d5990bbc4b043b9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/seher/releases/download/v0.0.31/sehercode-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "314071834a84a00fdac0baa6ccd3fd0e1acb389ac07d66be9255021f88172f4f"
+      url "https://github.com/smartcrabai/seher/releases/download/v0.0.35/seher-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "56aeec070e744c3530545aa08365c92c2bd4cdada32add689473dc2fd81a8f10"
     end
   end
   license "Apache-2.0"

@@ -1,25 +1,25 @@
 class Seher < Formula
   desc "Seher CLI: pick the highest-priority coding agent and run a plan/build prompt"
   homepage "https://github.com/smartcrabai/seher"
-  version "0.0.36"
+  version "0.0.37"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/seher/releases/download/v0.0.36/seher-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "85ed9ba8d0e229cd47bd93d00f801bee8fe85bb531878465e3d50c3e56b2c289"
+      url "https://github.com/smartcrabai/seher/releases/download/v0.0.37/seher-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "478fadb66a8fd2ede81e174baefaba2d696e283ab3622b421b1f1fbfd40cbc28"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/seher/releases/download/v0.0.36/seher-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "924fcc910845107c9c498fbf23ec636f23186833d02822c3fc5434fc532ca2ca"
+      url "https://github.com/smartcrabai/seher/releases/download/v0.0.37/seher-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "fbe23e6a201b4072f22453b0cb1bde0a885c4f5bf332a4b3570654ab10033842"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/seher/releases/download/v0.0.36/seher-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c08b631d015640e7c2ccd9b49ce0b77c8ab5130b55cd54b2ba4624fd537d5469"
+      url "https://github.com/smartcrabai/seher/releases/download/v0.0.37/seher-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1c4b405d50607d009b3bce872a72f3addc127c118ea08c22bdde3dfbd1a4c950"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/seher/releases/download/v0.0.36/seher-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ba683aa1cae12da90408cec7644b65439c4a7238f1cb12543eb92e8006513ba1"
+      url "https://github.com/smartcrabai/seher/releases/download/v0.0.37/seher-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3a4c5d0215973232b248646526cf5b5b5e6e8ef937a2eaeecd08b59203d0dd64"
     end
   end
   license "Apache-2.0"

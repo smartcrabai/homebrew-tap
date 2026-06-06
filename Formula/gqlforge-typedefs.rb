@@ -1,24 +1,24 @@
 class GqlforgeTypedefs < Formula
   desc "The gqlforge-typedefs application"
-  version "0.1.5"
+  version "0.1.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.5/gqlforge-typedefs-aarch64-apple-darwin.tar.xz"
-      sha256 "ead4e2df595afb54c103ea67273b849a0e816f9dee74d19de449aa6df0f08234"
+      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.6/gqlforge-typedefs-aarch64-apple-darwin.tar.xz"
+      sha256 "04dcdd8a260f3d099921ae0263a226a9d2751204996bce35c358640bd5b58168"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.5/gqlforge-typedefs-x86_64-apple-darwin.tar.xz"
-      sha256 "2bed093956a8074af7b0e11d358da560bebbb4437d8a637a302e25d4f16b8e75"
+      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.6/gqlforge-typedefs-x86_64-apple-darwin.tar.xz"
+      sha256 "1679f867c1055261c7d43085f62a8f04241942077bedf8000eb2e313e9b6a737"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.5/gqlforge-typedefs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d5bc13119341bd1ffcac7bc1c02ff14ab653eeb8d599a6a167290a7a3a4b05b4"
+      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.6/gqlforge-typedefs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5bdb7d3381758df0cbf786093e784929e0baac52319ee264e6f43eedbf43c058"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.5/gqlforge-typedefs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e766c03f8d5c116b7b0d1398d8845b3b41010d675dda6ca0b3adcdec401eb7ae"
+      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.6/gqlforge-typedefs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ac282ef638aebaf6a974253b23ca4f2f52b9d19ce724d8f289010c562f9dce97"
     end
   end
 

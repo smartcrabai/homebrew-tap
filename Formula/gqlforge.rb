@@ -1,25 +1,25 @@
 class Gqlforge < Formula
   desc "A high-performance GraphQL runtime"
   homepage "https://gqlforge.pages.dev"
-  version "0.1.5"
+  version "0.1.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.5/gqlforge-aarch64-apple-darwin.tar.xz"
-      sha256 "2e1f1503f5dc10f03a8778f5fa4214ccccc69a9e17d7ea51b8793f93ce8c9c71"
+      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.6/gqlforge-aarch64-apple-darwin.tar.xz"
+      sha256 "0e1ad188e3455bb0a5999fab778c57206148f8411facec48d66531ceae2fffa2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.5/gqlforge-x86_64-apple-darwin.tar.xz"
-      sha256 "9fb554c362486ddf9f1f7e1bd6ddb0277bef4aeeb7e4dc8e7b235b372bd91aa1"
+      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.6/gqlforge-x86_64-apple-darwin.tar.xz"
+      sha256 "47da8747c010fe47e2a9d726968713b4c899c592ba8956d752f1b53cb41cb6a3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.5/gqlforge-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "63b5755671227ace117dc075269083eb66a95005aedb018af0115fd003e6b4a1"
+      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.6/gqlforge-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "61633235eaf334425e5a02138709565f0cd01f80cb8fd763cb6a8ca2d01f69af"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.5/gqlforge-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "91b2d67bf86f219766d1087c881ec0a68999d6118e49781f6d7c0a59749b076c"
+      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.6/gqlforge-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b939f249606770f097c39889edabe1f7e928be342e1180c6ddc121ed656d92fa"
     end
   end
   license "Apache-2.0"

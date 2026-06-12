@@ -1,35 +1,33 @@
 class Cruise < Formula
   desc "YAML-driven coding agent workflow orchestrator"
   homepage "https://github.com/smartcrabai/cruise"
-  version "0.1.46"
+  version "0.1.47"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.46/cruise-aarch64-apple-darwin.tar.xz"
-      sha256 "d206b3f54c6c879d427a0c4d418767f68a3e3221a61e4ca7655b5cd3000b3df9"
+      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.47/cruise-aarch64-apple-darwin.tar.xz"
+      sha256 "7d6e3f7319eabd2f808e9f636a1ba223337e6530124ddc15f48c29b65bd4b35c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.46/cruise-x86_64-apple-darwin.tar.xz"
-      sha256 "bb60c8dc4bd45759bb1c7fcb5db50da3b5f733726fed8221cbffc951abb294bd"
+      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.47/cruise-x86_64-apple-darwin.tar.xz"
+      sha256 "bab7ff2fe75f52bf7714871729f1edaaa76ed67451af617ee11545de38f34e31"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.46/cruise-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b53674207a174f8384e5f0069bf3d7db7a72c189ba010b61e3add7d755de5099"
+      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.47/cruise-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "6d6440bffcee95b599f9fa4b328c6c5224a0cee6dae901449ff2385694a09316"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.46/cruise-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d3d9d2bd8adb9304107d58c15db4a7c2052fb4165c4cfd03838fa9b4a1d0d46b"
+      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.47/cruise-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "9228a2b79e5a6084b8e3c8c6fd76bde43b78f6695a0909a31b3f1ae2d964a91a"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
-    "aarch64-pc-windows-gnu":    {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
-    "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
 

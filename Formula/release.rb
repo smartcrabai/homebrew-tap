@@ -1,19 +1,19 @@
 class Release < Formula
   desc ""
   homepage "https://github.com/smartcrabai/release"
-  version "0.1.6"
+  version "0.1.7"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/smartcrabai/release/releases/download/v0.1.6/release-aarch64-apple-darwin.tar.xz"
-    sha256 "226ac56ae8e4c31552da1eed2c2c6a9027f972d82af19ea1b8e04397f4aa68c3"
+    url "https://github.com/smartcrabai/release/releases/download/v0.1.7/release-aarch64-apple-darwin.tar.xz"
+    sha256 "a7190cb408d6fbc3f6a4073bca40889ede5914c8a43060ae199940f35c1e47cd"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/release/releases/download/v0.1.6/release-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "27526349e648f64af5792791d265782a3b9c45503bd33b399b9b12002ba13b19"
+      url "https://github.com/smartcrabai/release/releases/download/v0.1.7/release-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "6836403d20bf020b8e54020affff66afdb6533562cc269e7335061014e46e1cd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/release/releases/download/v0.1.6/release-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ade134bfebf8fe798ae948423d6c946e288986e52456385eb73c23a25552ff67"
+      url "https://github.com/smartcrabai/release/releases/download/v0.1.7/release-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0205947d2e5e52ab2d8245e9c921ff074668e81fc066b8dff4de07499d2620d9"
     end
   end
   license "MIT"

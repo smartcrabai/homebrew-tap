@@ -1,20 +1,20 @@
 class Iwt < Formula
   desc "Interactive CLI for managing git worktrees"
   homepage "https://github.com/smartcrabai/interactive-worktree"
-  version "0.1.9"
+  version "0.1.12"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/interactive-worktree/releases/download/v0.1.9/interactive-worktree-aarch64-apple-darwin.tar.xz"
-      sha256 "ea17767f0193ab6829421c260b60c514bad369d68148fdfa64150fb0ac73e75d"
+      url "https://github.com/smartcrabai/interactive-worktree/releases/download/v0.1.12/interactive-worktree-aarch64-apple-darwin.tar.xz"
+      sha256 "4ac14d4db6a2171ebf0f3f32ce8a26b70a34835e9eeb9611cbf4d1d79928f5cb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/interactive-worktree/releases/download/v0.1.9/interactive-worktree-x86_64-apple-darwin.tar.xz"
-      sha256 "c62c882495f290499c4f595a4da5d8faf635edbd6bbe071ec614da0438e76342"
+      url "https://github.com/smartcrabai/interactive-worktree/releases/download/v0.1.12/interactive-worktree-x86_64-apple-darwin.tar.xz"
+      sha256 "fb6fa7151e3657034fadc77f10995d5185e44be3404d395e427dc808699f38d8"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/interactive-worktree/releases/download/v0.1.9/interactive-worktree-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a880aba0b1d4ac3ec78674131af5c399dc337ce7c74a1d5b3826a2354529be10"
+    url "https://github.com/smartcrabai/interactive-worktree/releases/download/v0.1.12/interactive-worktree-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "ab477ada2cd6ff38858c666e4eca04c5c58aa3c5670ddfcf693fb3f0d2380a79"
   end
   license "Apache-2.0"
 

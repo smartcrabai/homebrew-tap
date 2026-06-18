@@ -4,8 +4,8 @@ class Zz < Formula
   version "0.0.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/zz/releases/download/v0.0.8/zzsleep-aarch64-apple-darwin.tar.xz"
-      sha256 "ac5a00165516685cacc40e2f3ce5784e597372733d8af18897e91a1bd816e913"
+      url "https://github.com/smartcrabai/zz/archive/refs/tags/v0.0.9.tar.gz"
+      sha256 "d1a174dc77ad25cd1d99a409d73518e5e4e030587145f13468d487b098e8858d"
     end
     if Hardware::CPU.intel?
       url "https://github.com/smartcrabai/zz/releases/download/v0.0.8/zzsleep-x86_64-apple-darwin.tar.xz"

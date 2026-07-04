@@ -1,19 +1,19 @@
 class Skills < Formula
   desc "CLI for installing and managing agent skills (SKILL.md collections) across local development tooling"
   homepage "https://github.com/smartcrabai/skills"
-  version "0.1.6"
+  version "0.1.7"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/smartcrabai/skills/releases/download/v0.1.6/skills-aarch64-apple-darwin.tar.xz"
-    sha256 "04bead168dd6e3727a7b934e61db03a1e8a3a7c61269e0c8564d0a4b2138a911"
+    url "https://github.com/smartcrabai/skills/releases/download/v0.1.7/skills-aarch64-apple-darwin.tar.xz"
+    sha256 "c0cdb5f09f5cf5955f8665ab6c18e223a8bd55f95ffde95efaeda72715c18bde"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/skills/releases/download/v0.1.6/skills-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3efc03280b5ad2b374bbd1cc79e2f085e9c5f1c816b4787f1ec87d7d907c87b2"
+      url "https://github.com/smartcrabai/skills/releases/download/v0.1.7/skills-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "cbea9fbddb8901a3d4e17a3df248109e0097d984807322d0d00c8e6a11258b6b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/skills/releases/download/v0.1.6/skills-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c22a499775c25b7fc41563568c6356e8bb86069393f800ae945f0b642b6b36b1"
+      url "https://github.com/smartcrabai/skills/releases/download/v0.1.7/skills-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "63c58364c2466104b0b733644b68731d2f96f1f219bfc7a2af795958b9741db8"
     end
   end
   license "MIT"

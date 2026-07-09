@@ -4,8 +4,8 @@ class Cruise < Formula
   version "0.1.69"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.69/cruise-aarch64-apple-darwin.tar.xz"
-      sha256 "936cdb52f951fb6ee7c21d4a18a6859c5c542d8cd8eb1840de5c04fbd1865d7d"
+      url "https://github.com/smartcrabai/cruise/archive/refs/tags/v0.1.70.tar.gz"
+      sha256 "4dd8f4509c4c55a7049872c25105f6381dcc4ebbb3c80971261ae58178f2bd53"
     end
     if Hardware::CPU.intel?
       url "https://github.com/smartcrabai/cruise/releases/download/v0.1.69/cruise-x86_64-apple-darwin.tar.xz"

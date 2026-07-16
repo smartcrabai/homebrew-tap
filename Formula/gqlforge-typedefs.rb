@@ -3,8 +3,8 @@ class GqlforgeTypedefs < Formula
   version "0.1.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.7/gqlforge-typedefs-aarch64-apple-darwin.tar.xz"
-      sha256 "4d7442987c2d1da34865c995b6ecd94a92bf357e1b52580010963c8337f43e22"
+      url "https://github.com/smartcrabai/gqlforge/archive/refs/tags/v0.1.8.tar.gz"
+      sha256 "32ca3d9fd452ca848011d751d70c5c9f66b0c42814fda3d6b82d1175bbd948b5"
     end
     if Hardware::CPU.intel?
       url "https://github.com/smartcrabai/gqlforge/releases/download/v0.1.7/gqlforge-typedefs-x86_64-apple-darwin.tar.xz"

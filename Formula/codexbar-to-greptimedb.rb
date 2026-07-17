@@ -1,7 +1,7 @@
 class CodexbarToGreptimedb < Formula
   desc "Export CodexBar usage snapshots to GreptimeDB"
   homepage "https://github.com/takumi3488/codexbar-to-greptimedb"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
   depends_on :macos
 
@@ -10,11 +10,11 @@ class CodexbarToGreptimedb < Formula
   end
 
   if Hardware::CPU.arm?
-    url "https://github.com/takumi3488/codexbar-to-greptimedb/releases/download/v0.1.3/codexbar-to-greptimedb-0.1.3-macos-arm64.tar.gz"
-    sha256 "5f451cbfea3f7655cb5f27a4feb41236403d290a9c738d8c60831a9538bafba7"
+    url "https://github.com/takumi3488/codexbar-to-greptimedb/releases/download/v0.1.4/codexbar-to-greptimedb-0.1.4-macos-arm64.tar.gz"
+    sha256 "4a4d3a7c272628bb0a60b4be7d5ff3fb40721d0617309cda55b4c03174bd55df"
   elsif Hardware::CPU.intel?
-    url "https://github.com/takumi3488/codexbar-to-greptimedb/releases/download/v0.1.3/codexbar-to-greptimedb-0.1.3-macos-x86_64.tar.gz"
-    sha256 "cfa4534edaa869ea44760c1989cd49c97b34bab4da5061dd4e939bb5f0fdbf7a"
+    url "https://github.com/takumi3488/codexbar-to-greptimedb/releases/download/v0.1.4/codexbar-to-greptimedb-0.1.4-macos-x86_64.tar.gz"
+    sha256 "b6f67ee6132759104483718f14bf598e2b1e7069fec8cdaccac661dcd6864fc3"
   end
 
   def install

@@ -3,8 +3,8 @@ class Release < Formula
   homepage "https://github.com/smartcrabai/release"
   version "0.1.9"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/smartcrabai/release/releases/download/v0.1.9/release-aarch64-apple-darwin.tar.xz"
-    sha256 "296f732846ba83e6c21ac0995b29928b930e4f165c8de7eafdb3035e0615d9a8"
+    url "https://github.com/smartcrabai/release/archive/refs/tags/v0.1.10.tar.gz"
+    sha256 "2126c9c1df29721c7f1b91e38f11aa887bacdf4e542cef5f9fd860e5dfcc5607"
   end
   if OS.linux?
     if Hardware::CPU.arm?

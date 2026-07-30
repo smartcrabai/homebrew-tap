@@ -3,8 +3,8 @@ class Sakoku < Formula
   homepage "https://github.com/smartcrabai/sakoku"
   version "0.2.4"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/smartcrabai/sakoku/releases/download/v0.2.4/sakoku-aarch64-apple-darwin.tar.xz"
-    sha256 "d9fe348484e71870ceb4a2beeb34366326386527782eee64b708c465c83ad0bc"
+    url "https://github.com/smartcrabai/sakoku/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "ad6765a6f0c45a4ffd1cdfed497687077083a5acd7b7cdcfc5a5494d0795b56e"
   end
   if OS.linux?
     if Hardware::CPU.arm?

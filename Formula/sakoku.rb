@@ -1,19 +1,19 @@
 class Sakoku < Formula
   desc "A fast CLI tool to detect non-ASCII bytes in source files"
   homepage "https://github.com/smartcrabai/sakoku"
-  version "0.2.4"
+  version "0.3.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/smartcrabai/sakoku/releases/download/v0.2.4/sakoku-aarch64-apple-darwin.tar.xz"
-    sha256 "d9fe348484e71870ceb4a2beeb34366326386527782eee64b708c465c83ad0bc"
+    url "https://github.com/smartcrabai/sakoku/releases/download/v0.3.0/sakoku-aarch64-apple-darwin.tar.xz"
+    sha256 "4d40725f855f2c7e5a697e93e715d80a08a664ebb5021773b83fe0396b6f01dc"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/sakoku/releases/download/v0.2.4/sakoku-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "78dfdb53ede066c4da70bcfa6a37967aa62b9b30268b48bb30c40ff7b355f533"
+      url "https://github.com/smartcrabai/sakoku/releases/download/v0.3.0/sakoku-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f69f8f909d3814693add901452d8b8656f3b980e24de1299a9c667c980eada25"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/sakoku/releases/download/v0.2.4/sakoku-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c78877afa7119568ce390487e95a86ec16e38b3b13291fd05c287ba4d3a6f0f9"
+      url "https://github.com/smartcrabai/sakoku/releases/download/v0.3.0/sakoku-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8d586b4fe43e1cb292c086842f70e0bb765819bd717966bc12eeb1bde2ac1783"
     end
   end
   license "Apache-2.0"

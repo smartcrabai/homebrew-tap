@@ -4,8 +4,8 @@ class Seher < Formula
   version "0.0.53"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/seher/releases/download/v0.0.53/seher-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "5a03e110c2ee86f2b34170604db3738a558932ca693b8d6378bae78471b838a0"
+      url "https://github.com/smartcrabai/seher/archive/refs/tags/v0.0.54.tar.gz"
+      sha256 "7b26a8d08f05f5c925cd33e6a302640119dbbf8db15771dba08973de2dade979"
     end
     if Hardware::CPU.intel?
       url "https://github.com/smartcrabai/seher/releases/download/v0.0.53/seher-cli-x86_64-apple-darwin.tar.xz"

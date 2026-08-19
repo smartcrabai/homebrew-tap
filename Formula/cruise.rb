@@ -1,25 +1,25 @@
 class Cruise < Formula
   desc "YAML-driven coding agent workflow orchestrator"
   homepage "https://github.com/smartcrabai/cruise"
-  version "0.1.75"
+  version "0.1.80"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/cruise/archive/refs/tags/v1.tar.gz"
-      sha256 "b46641aae9438206ecdd35ebfab27561bc79ab253db84be2e3ffbe75196d67a4"
+      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.80/cruise-aarch64-apple-darwin.tar.xz"
+      sha256 "b3240b4ecbc5247c5394a5594f8c34f32fddfbc401ac2f4d84ab2ad1014862da"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.75/cruise-x86_64-apple-darwin.tar.xz"
-      sha256 "c41357468214c10a3aad88334778c96a391056ce5d632d182ae8e4ef3dcd45e0"
+      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.80/cruise-x86_64-apple-darwin.tar.xz"
+      sha256 "ec51ccfa139928c79aa45665fa37ffd52be350306ad8a77de3bf379983d80439"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.75/cruise-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "87c0791957d0cb310262837f02d3b78374bee9214db35831e9f677f8fbb23a40"
+      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.80/cruise-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "8c6fb8037a68104516440a96a287323634ddd85177ee2f47f3680588d417bdb1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.75/cruise-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0518d775d7e277986075470a8bea1d3eea1222bbdd93661f41e45074b3c2b84f"
+      url "https://github.com/smartcrabai/cruise/releases/download/v0.1.80/cruise-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e134d7b95462352dd25bb6d27f2241d8714a9764f052e79947f843f70be0eeca"
     end
   end
   license "MIT"
@@ -47,10 +47,18 @@ class Cruise < Formula
   end
 
   def install
-    bin.install "cruise" if OS.mac? && Hardware::CPU.arm?
-    bin.install "cruise" if OS.mac? && Hardware::CPU.intel?
-    bin.install "cruise" if OS.linux? && Hardware::CPU.arm?
-    bin.install "cruise" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "cruise"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "cruise"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "cruise"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "cruise"
+    end
 
     install_binary_aliases!
 

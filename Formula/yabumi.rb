@@ -1,19 +1,19 @@
 class Yabumi < Formula
   desc "A self-contained scripting language for Agent Skills"
   homepage "https://github.com/smartcrabai/yabumi"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/smartcrabai/yabumi/releases/download/v0.1.1/yabumi-aarch64-apple-darwin.tar.xz"
-    sha256 "5e79bb9fb9b92a3baf420f008e11cf94efac9e3f13af076114d7a34f8db75a3c"
+    url "https://github.com/smartcrabai/yabumi/releases/download/v0.1.2/yabumi-aarch64-apple-darwin.tar.xz"
+    sha256 "110f0e77a8cb006cd9d984f51eb4b59c10143ec6a96e8186012b522c0fc773e8"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/yabumi/releases/download/v0.1.1/yabumi-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d6b210c907f5936661727df91d192876152a63afb85dda3bf5497f59a110bee2"
+      url "https://github.com/smartcrabai/yabumi/releases/download/v0.1.2/yabumi-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9ad08ae15a59380abb427c09a6c4476065b704b6cb2e9e2b349f1c90521b757e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/yabumi/releases/download/v0.1.1/yabumi-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c5165f2010692cd331edaf4fdbd2282cb8815f5c501b48e8de09f0023cfa38ff"
+      url "https://github.com/smartcrabai/yabumi/releases/download/v0.1.2/yabumi-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ab2d052f7d140ea07511373d92911664555a439bd9788ca39b5c73c42edf52f8"
     end
   end
   license "MIT"

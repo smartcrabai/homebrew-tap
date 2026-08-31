@@ -1,7 +1,7 @@
 class CodexbarToGreptimedb < Formula
   desc "Export CodexBar usage snapshots to GreptimeDB"
   homepage "https://github.com/smartcrabai/codexbar-to-greptimedb"
-  version "0.1.9"
+  version "0.1.11"
   license "Apache-2.0"
   depends_on :macos
 
@@ -10,11 +10,11 @@ class CodexbarToGreptimedb < Formula
   end
 
   if Hardware::CPU.arm?
-    url "https://github.com/smartcrabai/codexbar-to-greptimedb/releases/download/v0.1.9/codexbar-to-greptimedb-0.1.9-macos-arm64.tar.gz"
-    sha256 "773b98af1ef69babafa7f195c351b72a7d5d7d95ca01d7c70cb1ee6b3c9af9bd"
+    url "https://github.com/smartcrabai/codexbar-to-greptimedb/releases/download/v0.1.11/codexbar-to-greptimedb-0.1.11-macos-arm64.tar.gz"
+    sha256 "10544bb7a055d978a9aa7090bab9c60b1b424bc6f5f39e5a2d3295c6dd22bc86"
   elsif Hardware::CPU.intel?
-    url "https://github.com/smartcrabai/codexbar-to-greptimedb/releases/download/v0.1.9/codexbar-to-greptimedb-0.1.9-macos-x86_64.tar.gz"
-    sha256 "77184cf7e8ea5b962919e5a80475691f60121e681600f94a1db2f42a116e31a6"
+    url "https://github.com/smartcrabai/codexbar-to-greptimedb/releases/download/v0.1.11/codexbar-to-greptimedb-0.1.11-macos-x86_64.tar.gz"
+    sha256 "2f74f219c58942811f88eef8d08ecc1d4f337f7884e3e014381332af27ed2c34"
   end
 
   def install

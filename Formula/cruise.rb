@@ -1,25 +1,25 @@
 class Cruise < Formula
   desc "YAML-driven coding agent workflow orchestrator"
   homepage "https://github.com/smartcrabai/cruise"
-  version "0.2.8"
+  version "0.2.9"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/cruise/releases/download/v0.2.8/cruise-aarch64-apple-darwin.tar.xz"
-      sha256 "085777d3852992a982cdddb1760aadc99a7b90e8d70066f3defc0ba1fed31c3d"
+      url "https://github.com/smartcrabai/cruise/releases/download/v0.2.9/cruise-aarch64-apple-darwin.tar.xz"
+      sha256 "a4ca49990a232fcbd55c47b10ecc4bc9231c4cac674f17853027716959f75c36"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/cruise/releases/download/v0.2.8/cruise-x86_64-apple-darwin.tar.xz"
-      sha256 "353bb2228ce70d965ed5964385fd722dfe9102a7064ffcda2cd18ed753ae1d98"
+      url "https://github.com/smartcrabai/cruise/releases/download/v0.2.9/cruise-x86_64-apple-darwin.tar.xz"
+      sha256 "cbe4003ccc6105eb0e1f6fcc75bf3da71264029e3c6b2f2055b6dc65095e2b00"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/cruise/releases/download/v0.2.8/cruise-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "89791d8707dce2b15cfaca1270c57d299f993f8b71140b69b0697011914275bc"
+      url "https://github.com/smartcrabai/cruise/releases/download/v0.2.9/cruise-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1743d4efdb64ff55f8b718862513c49e5df39b1c22ad18c6c04c32c9b3639736"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/cruise/releases/download/v0.2.8/cruise-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "210c8b5cff6f13d11d71d7f8c7886deb74699684fde2208958941139e7d85a89"
+      url "https://github.com/smartcrabai/cruise/releases/download/v0.2.9/cruise-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "1e7c8d874d995decb91dba168a342eb8dc1f336c756e45e095da41481b77352f"
     end
   end
   license "MIT"

@@ -5,21 +5,21 @@ class Cruise < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/smartcrabai/cruise/releases/download/v0.2.17/cruise-aarch64-apple-darwin.tar.xz"
-      sha256 "8a48ad24df53e0f75e72e713a114abc1169dd7db9d341765cfb6785bc0364808"
+      sha256 "f0ec1299cf74a2190f01c5213adf189a4a82f932eff9be473da6ddc0c2e854d6"
     end
     if Hardware::CPU.intel?
       url "https://github.com/smartcrabai/cruise/releases/download/v0.2.17/cruise-x86_64-apple-darwin.tar.xz"
-      sha256 "d7634f993a1d979fff35851ac06d10bec8a4dd0292f538a12a22764aba94d9e5"
+      sha256 "9d81921f64cdec4a1575793ac45c02aa0346c048b6b615737629f18c6f52887b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/smartcrabai/cruise/releases/download/v0.2.17/cruise-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c595d09a3e9ec0d3309d7701f93954e5726fdb063205988c4404ab828e8b1708"
+      sha256 "613062501cae706f26c1fc9f9c86de74b104925000e5ab58ac5ac4fdc7ec08f9"
     end
     if Hardware::CPU.intel?
       url "https://github.com/smartcrabai/cruise/releases/download/v0.2.17/cruise-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5cdd18952503d7fc0e71f79167be51710896e673b99db5c866ab6f4e7b1532d2"
+      sha256 "7a8e09eb0ec768a18b94b1a277fb3ff56a51cd2ec4b5b58c2ad5412718613c26"
     end
   end
   license "MIT"

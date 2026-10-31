@@ -1,19 +1,19 @@
 class GluonCli < Formula
   desc "CLI for the gluon framework"
   homepage "https://github.com/smartcrabai/gluon"
-  version "0.1.3"
+  version "0.1.4"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/smartcrabai/gluon/releases/download/v0.1.3/gluon-cli-aarch64-apple-darwin.tar.xz"
-    sha256 "af73a82ebd35e52b343b64dda778fa549fc4531bd0a789b6f0daea42da461ba7"
+    url "https://github.com/smartcrabai/gluon/releases/download/v0.1.4/gluon-cli-aarch64-apple-darwin.tar.xz"
+    sha256 "53454a6da8b56ebe29c519b3aac6caff3ca5f876bdd48aacdb6d3442ca73ec51"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/gluon/releases/download/v0.1.3/gluon-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ab9f61ed86e369c73e70f91b367a73367111226608aeabd54d18c5125b1f187d"
+      url "https://github.com/smartcrabai/gluon/releases/download/v0.1.4/gluon-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "88822f229a01e1e90a87b8d39c175f117ca7c51caae5ec0fb2f4e0fbaaf99b64"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/gluon/releases/download/v0.1.3/gluon-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4da28674ef99e6668a11090e933f72a9cbdcb775dd8fc7bd7279177b5ac9fda3"
+      url "https://github.com/smartcrabai/gluon/releases/download/v0.1.4/gluon-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "acb9cb6162ef2df4d671f4eae80aa498c9df13c0f98c4bd377366d1b52a7f94b"
     end
   end
   license "MIT"

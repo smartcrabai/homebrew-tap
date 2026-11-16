@@ -1,19 +1,19 @@
 class Potter < Formula
   desc "Headless, AI-friendly 3D creation CLI with Blender-compatible modeling, evaluation, and .blend exchange"
   homepage "https://github.com/smartcrabai/potter"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/smartcrabai/potter/releases/download/v0.2.0/potter-aarch64-apple-darwin.tar.xz"
-    sha256 "c4589bab74b7a4b52be75660d870ad52b8433047769e13597934f895dfb376d3"
+    url "https://github.com/smartcrabai/potter/releases/download/v0.3.0/potter-aarch64-apple-darwin.tar.xz"
+    sha256 "5ced33b90916653f6334aa1f62b61c8eb9e905572fbef678ef06ee35d1d1e980"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/smartcrabai/potter/releases/download/v0.2.0/potter-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c82622a85353a70105b9f0b8b6c5581b1c154a82b54083a8bf7faca59549efbf"
+      url "https://github.com/smartcrabai/potter/releases/download/v0.3.0/potter-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "61a4c4469b179b5196a873c36e755c57fa93dc4d2e73863b188e267015baaa16"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/smartcrabai/potter/releases/download/v0.2.0/potter-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e6e259e0d91bb2ac4682733ae9a4b612b0d25089c389fa5ead3733cd73ef47fc"
+      url "https://github.com/smartcrabai/potter/releases/download/v0.3.0/potter-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8835493ce5fd45aa1fab0e8b355d4468109293da6e5132b95daf9bcd2eba8244"
     end
   end
   license "GPL-3.0-or-later"
